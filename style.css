@@ -17,3 +17,56 @@
   margin-left: 50px;
   text-decoration: none;
 }
+
+.bemycat {
+  position: absolute;
+  width: 109px;
+  left: 24px;
+  top: 53px;
+
+  font-weight: 800;
+  font-size: 24px;
+  color: #65957e;
+}
+
+.footprint {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+
+  top: 39.76px;
+
+  transform: rotate(-15deg);
+}
+
+.emojicat {
+  position: absolute;
+  height: 71px;
+  width: 72px;
+  left: 139px;
+  top: 23px;
+}
+.title {
+  position: absolute;
+  left: 220px;
+  top: 33px;
+  font-weight: 900;
+  font-size: 28px;
+  color: #000000;
+}
+
+.book {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 362px;
+  top: 26px;
+}
+
+.platform {
+  position: absolute;
+  left: 220px;
+  top: 71px;
+  font-weight: 700;
+  font-size: 24px;
+}
