@@ -102,3 +102,11 @@
   position: absolute;
   top: 712px;
 }
+
+.footer_back {
+  width: 1094px;
+  height: 50px;
+  background-color: #65957E;
+  display: flex;
+  flex-direction: row;
+}
