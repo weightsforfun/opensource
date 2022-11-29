@@ -90,3 +90,15 @@
   margin: auto;
 
 }
+
+.imgsize {
+  position: absolute;
+  height: 172px;
+  width: 247px;
+  border-radius: 15px;
+}
+
+.imgsize_main {
+  position: absolute;
+  top: 712px;
+}
