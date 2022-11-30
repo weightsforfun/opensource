@@ -86,15 +86,7 @@
   margin-top: 10px;
 }
 
-.kind_row {
-  margin-left: 30px;
-  /* border: 2px solid red; */
-  display: inline;
-}
-
-
 .mainpic {
-
   width: 1080px;
   height: 424px;
   margin-top: 30px;
@@ -107,10 +99,10 @@
   position: relative;
   left: 72px;
   bottom: 272px;
-  color: #FFFFFF;
+  color: #ffffff;
 
   margin: auto;
-
+}
 
 .kind_row {
   margin-left: 30px;
@@ -123,5 +115,4 @@
   text-align: center;
   line-height: 100%;
   margin-top: 5px;
-
 }
