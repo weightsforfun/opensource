@@ -20,3 +20,5 @@ opensource team project
 신찬규 - in1,in2,in3 고양이 정보 상세페이지 틀 추가
 
 김영근 - 최근게시물 영역 추가, style.css 수정
+
+윤지용 - 페스티발 정보 틀 제작 및 일부 사진 삽입
