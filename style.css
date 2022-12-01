@@ -115,4 +115,22 @@
   text-align: center;
   line-height: 100%;
   margin-top: 5px;
+
+
 }
+
+.imgsize {
+  position: absolute;
+  height: 172px;
+  width: 247px;
+  border-radius: 15px;
+}
+
+.imgsize_main {
+  position: absolute;
+  top: 712px;
+
+}
+
+}
+
