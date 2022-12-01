@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>비마이캣</title>
+  </head>
+  <body>
+
+
+    <div class="nav">
+      <div style="width: 1100px; margin: auto" class="nav1">
+        <a class="top_c" href="./index.html"
+          ><img style="margin-top: 3px" src="./picture/home.png"
+        /></a>
+        <a class="top_c" href="./page1.html">고양이 품종</a>
+        <a class="top_c" style="color: #FFFFFF;" href="./information.html">고양이 지식IN</a>
+        <a class="top_c" href="./festival.html">행사/소식</a>
+      </div>
+    </div>
+
+
+    <div style="height: 115px; margin: auto; position: relative; width: 1100px">
+      <span class="bemycat">BeMyCat</span>
+      <img src="./picture/footprint.png" class="footprint" />
+      <img src="./picture/emojicat.png" class="emojicat" />
+      <span class="title">집사의 정석</span>
+      <img src="./picture/book.png" class="book" />
+      <span class="platform"
+        >지식정보사이트,
+        <span style="color: #65957e">비마이캣</span>
+      </span>
+    </div>
+
+
+    <div style="width: 1090px; margin: auto;">
+        <div style="font-size: 24px;font-weight: 700;">
+            <p style="line-height: 0.1;">알쓸신잡</p>
+            <p style="color: #65957E; font-size: 20px; font-weight: 500; line-height: 0.1;">
+                세상에 나쁜 고양이는 없다....</p>
+        </div>
+        <div>
+            <div style="display: flex; flex-direction: row; margin-top: 35px;">
+                <div style="display: inline; ">
+                    <a href="./in1.html" style="text-decoration: none; color: #000000;"><img
+                            src="./picture/bite_cat.jpg" class="kind">
+                        <p class="in_font">고양이 무는 버릇 고치는 방법</p>
+                    </a>
+                </div>
+                <div class="kind_row">
+                    <a href="./in2.html" style="text-decoration: none; color: #000000;"><img
+                            src="./picture/sleepcat.jpg" class="kind"></a>
+                    <p class="in_font">고양이의 자는 모습, 어떤 의미 일까?</p>
+                </div>
+                <div class="kind_row">
+                    <a href="./in3.html" style="text-decoration: none; color: #000000;"><img
+                            src="./picture/cat_tail.jpg" class="kind"></a>
+                    <p class="in_font">꼬리로 보는 주인님의 기분</p>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 60px; font-size: 24px;font-weight: 700;">
+          <p style="line-height: 0.1;">고양이 가이드</p>
+          <p style="color: #65957E; font-size: 20px; font-weight: 500; line-height: 0.1;">
+              초보여도 괜찮아!</p>
+      </div>
+      <div style="width: 1020px; margin-top: 40px;">
+          <ul>
+              <li><a href="./information.html" style="border-radius: 15px 0px 0px 15px;">0~4개월</a>
+              </li>
+              <li><a href="./guide1.html">4~12개월</a></li>
+              <li><a class="active" href="./guide2.html">1~6살</a></li>
+              <li><a href="./guide3.html">6~13살</a></li>
+              <li><a href="./guide4.html"
+                      style="border-radius: 0px 15px 15px 0px; border-right: 2px solid black">13살
+                      이후</a>
+              </li>
+          </ul>
+      </div>
+
+  </body>
+</html>
+<style>
+  * {
+    font-family: "Noto Sans KR", sans-serif;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  /*.top {
+    position: fixed;
+    top: 0px;
+    background-color: rgba(101, 148, 125, 1);
+    width: 100%;
+    height: 50px;
+  }*/
+
+  a:hover {
+    color: #ffffff;
+  }
+  li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    height: 50px;
+    width: 160px;
+    text-decoration: none;
+
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
+    line-height: 50px;
+
+
+
+}
+
+li a:hover {
+    color: #FFFFFF;
+    background-color: #65957E;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+li {
+
+    float: left;
+
+
+}
+
+li a.active {
+    color: #FFFFFF;
+    background-color: #65957E;
+}
+
+ul {
+
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    background-color: #fff;
+    border-radius: 15px;
+
+}
+</style>
