@@ -71,9 +71,22 @@
   font-size: 24px;
 }
 
+.kind {
+  height: 230px;
+  width: 340px;
+  border-radius: 15px;
+}
+
+.in_font {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  /* border: 2px solid red; */
+  line-height: 100%;
+  margin-top: 10px;
+}
 
 .mainpic {
-
   width: 1080px;
   height: 424px;
   margin-top: 30px;
@@ -86,7 +99,7 @@
   position: relative;
   left: 72px;
   bottom: 272px;
-  color: #FFFFFF;
+  color: #ffffff;
 
   margin: auto;
 }
@@ -103,6 +116,7 @@
   line-height: 100%;
   margin-top: 5px;
 
+
 }
 
 .imgsize {
@@ -117,3 +131,6 @@
   top: 712px;
 
 }
+
+}
+
