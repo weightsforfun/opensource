@@ -14,3 +14,6 @@ opensource team project
 
 신찬규 - information.html 일부 구현 및 style.css 병합충돌문제 해결
 
+12/1
+
+김영근 - 최근게시물 영역 추가, style.css 수정
