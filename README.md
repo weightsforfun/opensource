@@ -25,4 +25,4 @@ opensource team project
 
 12/03
 
-신찬규 - guide 페이지 모두 작성완료
+신찬규 - guide 페이지 모두 작성완료, home버튼에 마우스올리면 이미지 변경
