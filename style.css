@@ -115,8 +115,6 @@
   text-align: center;
   line-height: 100%;
   margin-top: 5px;
-
-
 }
 
 .imgsize {
@@ -129,10 +127,22 @@
 .imgsize_main {
   position: absolute;
   top: 712px;
-
 }
 
 .mainpic_font {
   font-weight: 700;
   font-size: 16px;
+}
+.guide {
+  width: 250px;
+  height: 170px;
+  border-radius: 15px;
+}
+
+.guide_text {
+  line-height: 15px;
+  /* border: 2px solid red; */
+
+  font-size: 12px;
+  font-weight: 500;
 }
