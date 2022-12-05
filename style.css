@@ -147,6 +147,36 @@
   font-weight: 500;
 }
 
+.event_pic {
+  width: 330px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.event_text {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 15px;
+  margin-top: 5px;
+  line-height: 10px;
+}
+
+.event_nav {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  display: block;
+}
+
+.event_a {
+  margin-left: 110px;
+  font-size: 16px;
+  color: #65957e;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
 #backtotop{
   background-color: #333;
   font-size: 1em; color:#ffffff;

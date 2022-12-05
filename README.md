@@ -23,7 +23,6 @@ opensource team project
 
 윤지용 - 페스티발 정보 틀 제작 및 일부 사진 삽입
 
-
 12/03
 
 신찬규 - guide 페이지 모두 작성완료, home버튼에 마우스올리면 이미지 변경
