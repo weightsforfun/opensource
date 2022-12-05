@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="kr" style="height: 95%;">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,12 +13,10 @@
     />
     <title>비마이캣</title>
   </head>
-  <body>
+  <body style="height: 100%;">
     <div class="nav">
       <div style="width: 1100px; margin: auto" class="nav1">
-        <a class="top_c" href="./index.html"
-          ><img style="margin-top: 3px" src="./picture/home.png"
-        /></a>
+        <a class="top_c" href="./index.html"><img style="margin-top: 3px" src="./picture/home.png"/></a>
         <a class="top_c" href="./page1.html">고양이 품종</a>
         <a class="top_c" href="./information.html">고양이 지식IN</a>
         <a class="top_c" href="./festival.html">행사/소식</a>
@@ -36,53 +34,47 @@
     </div>
 
     <div style="display: relative; width: 1090px; margin: auto;">
-
-        <div style="width: 1080px;height: 424px;">
-            <img src="./picture/background.png" class="mainpic">
-
-        </div>
-        <div class="mainpic_text">
-            <span style="font-size: 24px;">내 고양이 사진</span></br style="line-height: 35px;">
-            <span style="color:#FFCC4E; font-weight: 900; font-size: 28px; width: 1080px; ">@비마이캣</span></br
-                style="line-height: 35px;">
-            <span style="font-size: 24px;">인스타 계정에 올리기</span>
-        </div>
-        <p style="position: absolute;  top: 644px; font-weight: 700; font-size: 24px;">최근 게시물</p>
-    <div class="imgsize_main">
+      <img id="playingCat" src="./picture/TestCat.gif" style="height: 100px; position: absolute;">
+      <!-- <canvas id="catCanvas" style="position: absolute; border:10px solid black"> -->
+        <canvas id="catCanvas" style="position: absolute;">
+      </canvas>
+      <div style="width: 1080px; height: 424px;">
+        <img src="./picture/background.png" class="mainpic">
+      </div>
+      <div class="mainpic_text">
+        <span style="font-size: 24px;">내 고양이 사진</span></br style="line-height: 35px;">
+        <span style="color:#FFCC4E; font-weight: 900; font-size: 28px; width: 1080px; ">@비마이캣</span>
+        </br style="line-height: 35px;">
+        <span style="font-size: 24px;">인스타 계정에 올리기</span>
+      </div>
+      <p style="position: absolute;  top: 644px; font-weight: 700; font-size: 24px;">최근 게시물</p>
+      <div class="imgsize_main">
         <div style="display: inline; position:absolute; ">
-            <a href="./in1.html"><img class="imgsize" src="./picture/bite_cat.jpg"></a>
-
+            <a href="./in1.html">
+            <img class="imgsize" src="./picture/bite_cat.jpg"></a>
         </div>
         <div style="display: inline; position:absolute; left: 275px;">
-            <a href="http://www.petform.co.kr/magazine_view.asp?brd_idx=7"><img class="imgsize"
-                    src="./picture/angry_cat.jpg"></a>
+            <a href="http://www.petform.co.kr/magazine_view.asp?brd_idx=7">
+            <img class="imgsize" src="./picture/angry_cat.jpg"></a>
         </div>
         <div style="display: inline; position:absolute; left: 553px;">
-            <a href="https://www.notepet.co.kr/news/article/article_view/?idx=16102"><img class="imgsize"
-                    src="./picture/sleepcat.jpg"></a>
+            <a href="https://www.notepet.co.kr/news/article/article_view/?idx=16102">
+            <img class="imgsize" src="./picture/sleepcat.jpg"></a>
         </div>
         <div style="display: inline; position:absolute; left: 833px;">
-            <a href="https://www.royalcanin.com/kr/cats/health-and-wellbeing/what-foods-are-toxic-for-my-cat"><img
-                    class="imgsize" src="./picture/eat_cat.jpg"></a>
+            <a href="https://www.royalcanin.com/kr/cats/health-and-wellbeing/what-foods-are-toxic-for-my-cat">
+            <img class="imgsize" src="./picture/eat_cat.jpg"></a>
         </div>
-    </div>
-    <div style="width: 1090px; position: relative; margin: auto;">
-      <span style="position: absolute; left:15px; top: 181px; height: 50px;" class="mainpic_font">고양이가 무는 버릇
-          고치는
-          방법</span>
-      <span style="position: absolute; left: 326px; top: 181px; height: 50px;" class="mainpic_font">고양이가 싫어하는
-          색</span>
-      <span style="position: absolute; left: 568px; top: 181px; height: 50px;" class="mainpic_font">고양이는 하루에 몇
-          시간을
-          잘까?</span>
-      <span style="position: absolute; left: 864px; top: 181px; height: 50px;" class="mainpic_font">고양이가 먹으면
-          안되는
-          음식</span>
+      </div>
+      <div style="width: 1090px; position: relative; margin: auto;">
+        <span style="position: absolute; left:15px; top: 181px; height: 50px;" class="mainpic_font">고양이가 무는 버릇 고치는 방법</span>
+        <span style="position: absolute; left: 326px; top: 181px; height: 50px;" class="mainpic_font">고양이가 싫어하는 색</span>
+        <span style="position: absolute; left: 568px; top: 181px; height: 50px;" class="mainpic_font">고양이는 하루에 몇 시간을 잘까?</span>
+        <span style="position: absolute; left: 864px; top: 181px; height: 50px;" class="mainpic_font">고양이가 먹으면 안되는 음식</span>
       </div>
     </div>
+    <script src = "indexCat.js"></script>
   </body>
-  
-
 </html>
 <style>
   * {

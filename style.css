@@ -129,10 +129,13 @@
 .imgsize_main {
   position: absolute;
   top: 712px;
-
 }
 
 .mainpic_font {
   font-weight: 700;
   font-size: 16px;
+}
+
+#playingCat{
+  z-index: 2;
 }
