@@ -133,6 +133,7 @@
   font-weight: 700;
   font-size: 16px;
 }
+
 .guide {
   width: 250px;
   height: 170px;
@@ -175,6 +176,11 @@
   text-decoration: underline;
   font-weight: 500;
   margin-top: 5px;
+}
+
+
+#playingCat{
+  z-index: 2;
 }
 
 .in_cat {
@@ -243,4 +249,5 @@
   opacity: 1;
   visibility: visible;
 }
+
 
