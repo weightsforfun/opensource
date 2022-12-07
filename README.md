@@ -4,10 +4,7 @@ opensource team project
 
 11/24~11/28
 
-윤지용 - festival page 일부 구현
-신찬규 - frame page 일부 구현
-김영근 - main page 일부 구현
-이정호 - breed page 일부 구현
+윤지용 - festival page 일부 구현 신찬규 - frame page 일부 구현 김영근 - main page 일부 구현 이정호 - breed page 일부 구현
 
 11/30
 
@@ -29,11 +26,11 @@ opensource team project
 
 이정호 - 고양이 품종 사진 추가 및 페이지에 사진 삽입
 
-
 12/04
 
-
 김영근 - index에 고양이 이동 범위 제한할 캔버스 추가
+
+윤지용 - festival page 완성
 
 12/05
 
@@ -50,3 +47,5 @@ opensource team project
 12/07
 
 김영근 - 고양이 이동 구현, 랜덤 종류 고양이 테스트(주석)
+
+윤지이용 - 다크모드 버튼 만듬 background만 다른페이지 적용 및 글자색 변경도 추가해야함
