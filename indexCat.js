@@ -1,19 +1,40 @@
-var catGif = document.getElementById("playingCat");
-var WIDTH = 1080;
-var HEIGHT = 750;
-var PADDING = 50;
-var xPos = 0, yPos = 0;
-var xPosInit = 0, yPosInit = 0;
-var arrived = true;
-var amount = 1;
-var ms = 30;
+
+//객체 1,2,3 생성
+const cat1 = {
+    catGif : document.getElementById("playingCat"),
+     WIDTH : 1080,
+ HEIGHT : 750,
+ PADDING : 50,
+ xPos : 0, yPos : 0,
+ xPosInit : 100, yPosInit : 100,
+ arrived : true,
+ amount : 1,
+ ms : 30
+}
+const cat2 = {
+    catGif : document.getElementById("playingCat2"),
+     WIDTH : 1080,
+ HEIGHT : 750,
+ PADDING : 50,
+ xPos : 0, yPos : 0,
+ xPosInit : 200, yPosInit : 200,
+ arrived : true,
+ amount : 1,
+ ms : 30
+}
 
 window.onload = function() {
-    initializeCat();
-    catPlaying();
+    //만든 객체들 각각 실행
+    initializeCat(cat1);
+    catPlaying(cat1);
+    initializeCat(cat2);
+    catPlaying(cat2);
+    
+    
 };
 
-function initializeCat(){
+//모든 함수에 객체를 전달시켜, 객체내의 변수에 접근 가능하게함
+function initializeCat(cat){
     // choice random cat
     // var randomCat = Math.round(Math.random() * 2);
     // console.log(randomCat);
@@ -29,31 +50,31 @@ function initializeCat(){
     //         break;
     // }
 
-    xPosInit = generateRandomPosition(PADDING, WIDTH);
-    yPosInit = generateRandomPosition(PADDING, HEIGHT);
-    catGif.style.left = xPosInit + "px";
-    catGif.style.top = yPosInit + "px";
-    console.log("init pos : (" + xPosInit + ", " + yPosInit + ")");
+    cat.xPosInit = generateRandomPosition(cat.PADDING, cat.WIDTH);
+    cat.yPosInit = generateRandomPosition(cat.PADDING, cat.HEIGHT);
+    cat.catGif.style.left = cat.xPosInit + "px";
+    cat.catGif.style.top = cat.yPosInit + "px";
+    //console.log("init pos : (" + xPosInit + ", " + yPosInit + ")");
 }
 
 // 20ms마다 고양이 방향, 위치 갱신
-function catPlaying(){
-    var catWalk = setInterval(() => move(amount), ms);
+function catPlaying(cat){
+    var catWalk = setInterval(() => move(cat), cat.ms);
 }
 
-function move(amount){
-    if(arrived){
-        getNewPosition(WIDTH, HEIGHT);  // 목적지
-        setDirection();                 // 방향
-        arrived = false;
+function move(cat){
+    if(cat.arrived){
+        getNewPosition(cat);  // 목적지
+        setDirection(cat);                 // 방향
+        cat.arrived = false;
     }
     // console.log("currnct coordinate : (" + getNowPosX() + ", " + getNowPosY() + ")");
     // 이동
-    if(getNowPosX() < xPos) catGif.style.left = getNowPosX() + amount + "px";
-    else if(getNowPosX() > xPos) catGif.style.left = getNowPosX() - amount + "px";
-    if(getNowPosY() < yPos) catGif.style.top = getNowPosY() + amount + "px";
-    else if(getNowPosY() > yPos) catGif.style.top = getNowPosY() - amount + "px";
-    if(getNowPosX() == xPos && getNowPosY() == yPos) arrived = true;
+    if(getNowPosX(cat) < cat.xPos) cat.catGif.style.left = getNowPosX(cat) + cat.amount + "px";
+    else if(getNowPosX(cat) > cat.xPos) cat.catGif.style.left = getNowPosX(cat) - cat.amount + "px";
+    if(getNowPosY(cat) < cat.yPos) cat.catGif.style.top = getNowPosY(cat) + cat.amount + "px";
+    else if(getNowPosY(cat) > cat.yPos) cat.catGif.style.top = getNowPosY(cat) - cat.amount + "px";
+    if(getNowPosX(cat) == cat.xPos && getNowPosY(cat) == cat.yPos) cat.arrived = true;
 }
 
 function getDistance(ax, ay, zx, zy){
@@ -67,32 +88,32 @@ function generateRandomPosition(padding, boundary){
     return padding + Math.floor(Math.random() * boundary);
 }
 
-function getDirection(){
-    if (getNowPosX() <= xPos)
+function getDirection(cat){
+    if (getNowPosX(cat) <= cat.xPos)
         return -1;
     else
         return 1;
 }
 
-function setDirection(){
-    catGif.style.transform = "scaleX("+getDirection()+")";
+function setDirection(cat){
+    cat.catGif.style.transform = "scaleX("+getDirection(cat)+")";
 }
 
-function getNewPosition(width, height){
-    xPos = generateRandomPosition(PADDING, width);
-    yPos = generateRandomPosition(PADDING, height);
-    console.log("New Position : (" + xPos + ", " + yPos + ")");
+function getNewPosition(cat){
+    cat.xPos = generateRandomPosition(cat.PADDING, cat.WIDTH);
+    cat.yPos = generateRandomPosition(cat.PADDING, cat.HEIGHT);
+    console.log("New Position : (" + cat.xPos + ", " + cat.yPos + ")");
 }
 
-function setNewPosition(){
-    catGif.style.left = xPos + "px";
-    catGif.style.top = yPos + "px";
+function setNewPosition(cat){
+    cat.catGif.style.left = cat.xPos + "px";
+    cat.catGif.style.top = cat.yPos + "px";
 }
 
-function getNowPosX(){
-    return parseInt(catGif.style.left.replace('px', ''));
+function getNowPosX(cat){
+    return parseInt(cat.catGif.style.left.replace('px', ''));
 }
 
-function getNowPosY(){
-    return parseInt(catGif.style.top.replace('px', ''))
+function getNowPosY(cat){
+    return parseInt(cat.catGif.style.top.replace('px', ''))
 }
