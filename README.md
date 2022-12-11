@@ -62,3 +62,7 @@ opensource team project
 
 신찬규 - 고양이 추가
 
+12/10
+
+신찬규 - 고양이 지식in페이지 완성
+
