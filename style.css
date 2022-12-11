@@ -255,3 +255,10 @@ html.dark {
   background: #121212;
   color: #bbb;
 }
+
+html.dark a {
+  color: #3ea6ff;
+}
+#playingCat2 {
+  z-index: 2;
+}
