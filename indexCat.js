@@ -9,7 +9,7 @@ const cat1 = {
  xPosInit : 100, yPosInit : 100,
  arrived : true,
  amount : 1,
- ms : 30
+ ms : 15 + Math.round(Math.random() * 15)
 }
 const cat2 = {
     catGif : document.getElementById("playingCat2"),
@@ -20,7 +20,18 @@ const cat2 = {
  xPosInit : 200, yPosInit : 200,
  arrived : true,
  amount : 1,
- ms : 30
+ ms : 15 + Math.round(Math.random() * 15)
+}
+const cat3 = {
+    catGif : document.getElementById("playingCat3"),
+     WIDTH : 1080,
+ HEIGHT : 750,
+ PADDING : 50,
+ xPos : 0, yPos : 0,
+ xPosInit : 200, yPosInit : 200,
+ arrived : true,
+ amount : 1,
+ ms : 15 + Math.round(Math.random() * 15)
 }
 
 window.onload = function() {
@@ -29,26 +40,14 @@ window.onload = function() {
     catPlaying(cat1);
     initializeCat(cat2);
     catPlaying(cat2);
+    initializeCat(cat3);
+    catPlaying(cat3);
     
     
 };
 
 //모든 함수에 객체를 전달시켜, 객체내의 변수에 접근 가능하게함
 function initializeCat(cat){
-    // choice random cat
-    // var randomCat = Math.round(Math.random() * 2);
-    // console.log(randomCat);
-    // switch(randomCat){
-    //     case 0:
-    //         catGif.src = "./picture/cat_gif.gif";
-    //         break;
-    //     case 1:
-    //         catGif.src = "./picture/cat_gif2.gif";
-    //         break;
-    //     default:
-    //         catGif.src = "./picture/cat_gif_ref.gif";
-    //         break;
-    // }
 
     cat.xPosInit = generateRandomPosition(cat.PADDING, cat.WIDTH);
     cat.yPosInit = generateRandomPosition(cat.PADDING, cat.HEIGHT);
@@ -65,10 +64,9 @@ function catPlaying(cat){
 function move(cat){
     if(cat.arrived){
         getNewPosition(cat);  // 목적지
-        setDirection(cat);                 // 방향
+        setDirection(cat);    // 방향
         cat.arrived = false;
     }
-    // console.log("currnct coordinate : (" + getNowPosX() + ", " + getNowPosY() + ")");
     // 이동
     if(getNowPosX(cat) < cat.xPos) cat.catGif.style.left = getNowPosX(cat) + cat.amount + "px";
     else if(getNowPosX(cat) > cat.xPos) cat.catGif.style.left = getNowPosX(cat) - cat.amount + "px";
@@ -102,7 +100,8 @@ function setDirection(cat){
 function getNewPosition(cat){
     cat.xPos = generateRandomPosition(cat.PADDING, cat.WIDTH);
     cat.yPos = generateRandomPosition(cat.PADDING, cat.HEIGHT);
-    console.log("New Position : (" + cat.xPos + ", " + cat.yPos + ")");
+    // Debug
+    // console.log("New Position : (" + cat.xPos + ", " + cat.yPos + ")");
 }
 
 function setNewPosition(cat){
