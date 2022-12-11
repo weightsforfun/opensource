@@ -21,9 +21,10 @@
           ><img style="margin-top: 3px" src="./picture/home_grey.png"
           onmouseover="this.src='./picture/home.png'" onmouseout="this.src='./picture/home_grey.png'"
         /></a>
-        <a class="top_c" href="./page1.html">고양이 품종</a>
+        <a class="top_c" style="color: #FFFFFF;" href="./page1.html">고양이 품종</a>
         <a class="top_c" href="./information.html">고양이 지식IN</a>
         <a class="top_c" href="./festival.html">행사/소식</a>
+        <img  src="./picture/pop-cat-sticker.gif" style="height: 50px; width: 75px; transform:scaleX(-1); margin-left:600px">
       </div>
     </div>
     <div style="height: 115px; margin: auto; position: relative; width: 1100px">
@@ -45,6 +46,9 @@
             <p style="color: #65957E; font-size: 20px; font-weight: 500; line-height: 0.1;">
                 내 고양이 조상님은 누구세요?</p>
         </div>
+        <img id="playingCat" src="./picture/catwalk1.gif" style="height: 100px; position: absolute;">
+        <img id="playingCat2" src="./picture/catwalk2.gif" style="height: 100px; position: absolute;">
+        <img id="playingCat3" src="./picture/catwalk3.gif" style="height: 100px; position: absolute; z-index: 1;">
         <!-- 사진들 -->
         <div>
             <div style="display: flex; flex-direction: row; margin-top: 35px;">
@@ -93,6 +97,7 @@
     </div>
     <a id="backtotop">Top</a>
       <script src="./topbutton.js"></script>
+      <script src="./indexCat.js"></script>
 </html>
 <style>
     * {
@@ -113,7 +118,7 @@
   
     a:hover {
       color: #ffffff;
-      cursor: url('./picture/cursor\ \(5\).cur'),auto;
+      cursor: url('./picture/cursor\ \(3\).cur'),auto;
   }
   body{
     cursor: url('./picture/cursor\ \(4\).cur'),auto;

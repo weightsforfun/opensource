@@ -20,6 +20,7 @@
         <a class="top_c" href="./page1.html">고양이 품종</a>
         <a class="top_c" href="./information.html">고양이 지식IN</a>
         <a class="top_c" href="./festival.html">행사/소식</a>
+        <img  src="./picture/pop-cat-sticker.gif" style="height: 50px; width: 75px; transform:scaleX(-1); margin-left:600px">
       </div>
     </div>
     <div style="height: 115px; margin: auto; position: relative; width: 1100px">
@@ -34,7 +35,10 @@
     </div>
 
     <div style="display: relative; width: 1090px; margin: auto;">
-      <img id="playingCat" src="./picture/cat_gif2.gif" style="height: 100px; position: absolute;">
+      <img id="playingCat" src="./picture/catwalk1.gif" style="height: 100px; position: absolute;">
+      <img id="playingCat2" src="./picture/catwalk2.gif" style="height: 100px; position: absolute;">
+      <img id="playingCat3" src="./picture/catwalk3.gif" style="height: 100px; position: absolute; z-index: 1;">
+
       <div style="width: 1080px; height: 424px;">
         <img src="./picture/background.png" class="mainpic">
       </div>
@@ -71,6 +75,8 @@
       </div>
     </div>
     <script src = "indexCat.js"></script>
+    <a id="backtotop">Top</a>
+    <script src="./topbutton.js"></script>
   </body>
 </html>
 <style>
@@ -92,5 +98,9 @@
 
   a:hover {
     color: #ffffff;
-  }
+    cursor: url('./picture/cursor\ \(3\).cur'),auto;
+}
+body{
+  cursor: url('./picture/cursor\ \(4\).cur'),auto;
+}
 </style>
