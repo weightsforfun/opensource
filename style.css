@@ -52,7 +52,6 @@
   top: 33px;
   font-weight: 900;
   font-size: 28px;
-  color: #000000;
 }
 
 .book {
@@ -248,10 +247,6 @@
   visibility: visible;
 }
 
-a {
-  color: #0000ee;
-}
-
 html {
   background-color: white;
 }
@@ -267,3 +262,4 @@ html.dark a {
 #playingCat2 {
   z-index: 2;
 }
+
