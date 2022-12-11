@@ -52,7 +52,6 @@
   top: 33px;
   font-weight: 900;
   font-size: 28px;
-  color: #000000;
 }
 
 .book {
@@ -248,10 +247,6 @@
   visibility: visible;
 }
 
-a {
-  color: #0000ee;
-}
-
 html {
   background-color: white;
 }
@@ -259,8 +254,4 @@ html {
 html.dark {
   background: #121212;
   color: #bbb;
-}
-
-html.dark a {
-  color: #3ea6ff;
 }
