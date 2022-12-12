@@ -12,12 +12,28 @@
       rel="stylesheet"
     />
     <title>비마이캣</title>
+    <script
+      src="https://kit.fontawesome.com/dffa20460d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-    <img id="playingCat" src="./picture/catwalk1.gif" style="height: 100px; position: absolute;">
-    <img id="playingCat2" src="./picture/catwalk2.gif" style="height: 100px; position: absolute;">
-    <img id="playingCat3" src="./picture/catwalk3.gif" style="height: 100px; position: absolute; z-index: 1;">
+    <img
+      id="playingCat"
+      src="./picture/catwalk1.gif"
+      style="height: 100px; position: absolute"
+    />
+    <img
+      id="playingCat2"
+      src="./picture/catwalk2.gif"
+      style="height: 100px; position: absolute"
+    />
+    <img
+      id="playingCat3"
+      src="./picture/catwalk3.gif"
+      style="height: 100px; position: absolute; z-index: 1"
+    />
     <div>
       <div class="nav">
         <div style="width: 1100px; margin: auto" class="nav1">
@@ -33,7 +49,29 @@
           <a class="top_c" style="color: #ffffff" href="./festival.html"
             >행사/소식</a
           >
-          <img  src="./picture/pop-cat-sticker.gif" style="height: 50px; width: 75px; transform:scaleX(-1); margin-left:600px">
+          <button
+            id="toggleTheme"
+            class="toggleTheme"
+            style="
+              height: 50px;
+              width: 10px;
+              background-color: transparent;
+              border: none;
+              color: yellow;
+              margin: auto;
+            "
+          >
+            <i class="fa-solid fa-lightbulb"></i>
+          </button>
+          <img
+            src="./picture/pop-cat-sticker.gif"
+            style="
+              height: 50px;
+              width: 75px;
+              transform: scaleX(-1);
+              margin-left: 600px;
+            "
+          />
         </div>
       </div>
 
@@ -216,6 +254,7 @@
     <a id="backtotop">Top</a>
     <script src="./topbutton.js"></script>
     <script src="./indexCat.js"></script>
+    <script src="darkmode.js"></script>
   </body>
   <style>
     * {
@@ -234,9 +273,7 @@
       color: #ffffff;
     }
     a:hover {
-
       cursor: url("./picture/cursor\ \(5\).cur"), auto;
-
     }
     body {
       cursor: url("./picture/cursor\ \(4\).cur"), auto;

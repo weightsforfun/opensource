@@ -12,20 +12,49 @@
       rel="stylesheet"
     />
     <title>비마이캣</title>
+    <script
+      src="https://kit.fontawesome.com/dffa20460d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="nav">
       <div style="width: 1100px; margin: auto" class="nav1">
         <a class="top_c" href="./index.html"
-          ><img style="margin-top: 3px" src="./picture/home_grey.png"
-          onmouseover="this.src='./picture/home.png'" onmouseout="this.src='./picture/home_grey.png'"
+          ><img
+            style="margin-top: 3px"
+            src="./picture/home_grey.png"
+            onmouseover="this.src='./picture/home.png'"
+            onmouseout="this.src='./picture/home_grey.png'"
         /></a>
         <a class="top_c" href="./page1.html">고양이 품종</a>
         <a class="top_c" style="color: #ffffff" href="./information.html"
           >고양이 지식IN</a
         >
         <a class="top_c" href="./festival.html">행사/소식</a>
-        <img  src="./picture/pop-cat-sticker.gif" style="height: 50px; width: 75px; transform:scaleX(-1); margin-left:600px">
+        <button
+          id="toggleTheme"
+          class="toggleTheme"
+          style="
+            height: 50px;
+            width: 10px;
+            background-color: transparent;
+            border: none;
+            color: yellow;
+            margin: auto;
+          "
+        >
+          <i class="fa-solid fa-lightbulb"></i>
+        </button>
+        <img
+          src="./picture/pop-cat-sticker.gif"
+          style="
+            height: 50px;
+            width: 75px;
+            transform: scaleX(-1);
+            margin-left: 600px;
+          "
+        />
       </div>
     </div>
 
@@ -57,58 +86,104 @@
 
     <hr style="border: 1px solid #65957e; background-color: #65957e" />
 
-    <div style="width: 1090px; margin: auto;">
-      <div style="width: 700px; margin: 0 0 0 200px;">
-          <p class="in_cat">고양이 지식IN/알쓸신잡</p>
-          <p class="in_title">고양이 자는 모습, 어떤 의미일까?</p>
-          <p class="in_sub_contents">사랑스러운 내 고양이, 자는 모습 또한 귀여워 괴롭히고 싶어질 때가 있다.
-              어떻게 저런 자세로 자지? 라고 생각할 만큼 다양한 자세로 잠드는 고양이들. 고양이 자는 모습, 어떤 의미가 담겼을까?</p>
-          <div style="margin-top: 30px">
-              <p class="in_sub_contents" style="color: #FFBF22;">고양이 자는 모습 = 고양이의 기분?</p>
-              <p class="in_contetns">고양이는 말을 할 수 없다. 그래서 <span class="in_emphasize">꼬리나 울음 소리로 기분</span>을 표현한다.
-                  그런데 자는 모습에서도 고양이의 기분을 알 수 있다는 것을 알고 있는가? 고양이 자는 모습에서 알 수 있는 고양이의 심리 상태에 대해 알아보자. </p>
-          </div>
-          <img src="./picture/sleepcat1.jpg" class="in_pic">
-          <div>
-              <p class="in_sub_contents">1. 발을 전부 바닥에 붙인 자세</p>
-              <p class="in_contetns">앉은 자세처럼 보이는 이 자세는 <span class="in_emphasize">경계심이 많은</span> 고양이에게서 자주 볼 수 있다.
-                  앉은 채로 네 발 전부 바닥에 붙여 언제든지 도망갈 수 있는 자세다. 많은 고양이들이 이 자세로 잔다.</p>
-          </div>
-          <img src="./picture/sleepcat2.jpg" class="in_pic" style="margin-top: 40px;">
-          <div>
-              <p class="in_sub_contents">2. 식빵 굽는 자세</p>
-              <p class="in_contents">앞발을 몸 안쪽으로 접은 자세로 일명 식빵 굽는 자세. 앉아 있는 자세에 비해 안정되어 있는 상태다.
-                  하지만 이 자세도 역시 완벽한 안정을 나타내지는 않는다. <span class="in_emphasize">어느 정도의 경계심</span>은 남아 있다고 볼 수 있다.
-
-              </p>
-          </div>
-          <img src="./picture/sleepcat3.jpg" class="in_pic" style="margin-top: 40px;">
-          <div>
-              <p class="in_sub_contents">3. 냥모나이트</p>
-              <p class="in_contents">가끔 고양이가 몸을 둥글게 말고 얼굴을 엉덩이 쪽으로 굽혀 잘 때가 있다.
-                  일명 냥모나이트 자세. 얼굴을 숙이고 발이 바닥에서 떨어진 자세이기 때문에 <span class="in_emphasize">경계심은 낮은</span> 상태다.
-                  이 자세일 경우 약간 서늘하다고 느낄 때가 있다고 한다. 또는 혼자 있고 싶을 때나 방해받고 싶지 않다는 의미라고도 한다. </p>
-          </div>
-          <img src="./picture/sleepcat4.jpg" class="in_pic" style="margin-top: 40px;">
-          <div>
-              <p class="in_sub_contents">4. 손으로 눈을 가린 '고멘 네코'</p>
-              <p class="in_contents">‘고멘 네코’라고 불리는 이 자세. 손으로 눈을 가리거나 얼굴을 바닥에 묻는다.
-                  집사들에게서도 가장 인기가 좋은 고양이 자는 모습, 고멘네코. 하지만 이것은 <span class="in_emphasize">눈이 부시다</span>는 뜻이다.
-                  만약 이 자세로 자고 있다면 방 안의 조명을 꺼 어둡게 해주자. 너무 귀엽지만 고양이가 숙면할 수 있는 분위기를 만드는 것이 좋다. </p>
-          </div>
-          <img src="./picture/sleepcat5.jpg" class="in_pic" style="margin-top: 40px;">
-          <div>
-              <p class="in_sub_contents">5. 옆이나 천장을 향해 누워 있는 모습</p>
-              <p class="in_contents"><span class="in_emphasize">가장 편안하고 안정된 상태</span>를 나타낸다. 약점인 배를 그대로 보여주는 자세이기
-                  때문이다.
-                  야생 고양이나 불안함을 느끼는 고양이는 이 자세를 하지 않는다. 만약 고양이가 이 자세로 자고 있다면 스스로에게 칭찬해 줘도 좋을 것이다.
-                  고양이에게 완벽한 잠자리를 만들어 준 집사이니까. </p>
-          </div>
+    <div style="width: 1090px; margin: auto">
+      <div style="width: 700px; margin: 0 0 0 200px">
+        <p class="in_cat">고양이 지식IN/알쓸신잡</p>
+        <p class="in_title">고양이 자는 모습, 어떤 의미일까?</p>
+        <p class="in_sub_contents">
+          사랑스러운 내 고양이, 자는 모습 또한 귀여워 괴롭히고 싶어질 때가 있다.
+          어떻게 저런 자세로 자지? 라고 생각할 만큼 다양한 자세로 잠드는
+          고양이들. 고양이 자는 모습, 어떤 의미가 담겼을까?
+        </p>
+        <div style="margin-top: 30px">
+          <p class="in_sub_contents" style="color: #ffbf22">
+            고양이 자는 모습 = 고양이의 기분?
+          </p>
+          <p class="in_contetns">
+            고양이는 말을 할 수 없다. 그래서
+            <span class="in_emphasize">꼬리나 울음 소리로 기분</span>을
+            표현한다. 그런데 자는 모습에서도 고양이의 기분을 알 수 있다는 것을
+            알고 있는가? 고양이 자는 모습에서 알 수 있는 고양이의 심리 상태에
+            대해 알아보자.
+          </p>
+        </div>
+        <img src="./picture/sleepcat1.jpg" class="in_pic" />
+        <div>
+          <p class="in_sub_contents">1. 발을 전부 바닥에 붙인 자세</p>
+          <p class="in_contetns">
+            앉은 자세처럼 보이는 이 자세는
+            <span class="in_emphasize">경계심이 많은</span> 고양이에게서 자주 볼
+            수 있다. 앉은 채로 네 발 전부 바닥에 붙여 언제든지 도망갈 수 있는
+            자세다. 많은 고양이들이 이 자세로 잔다.
+          </p>
+        </div>
+        <img
+          src="./picture/sleepcat2.jpg"
+          class="in_pic"
+          style="margin-top: 40px"
+        />
+        <div>
+          <p class="in_sub_contents">2. 식빵 굽는 자세</p>
+          <p class="in_contents">
+            앞발을 몸 안쪽으로 접은 자세로 일명 식빵 굽는 자세. 앉아 있는 자세에
+            비해 안정되어 있는 상태다. 하지만 이 자세도 역시 완벽한 안정을
+            나타내지는 않는다.
+            <span class="in_emphasize">어느 정도의 경계심</span>은 남아 있다고
+            볼 수 있다.
+          </p>
+        </div>
+        <img
+          src="./picture/sleepcat3.jpg"
+          class="in_pic"
+          style="margin-top: 40px"
+        />
+        <div>
+          <p class="in_sub_contents">3. 냥모나이트</p>
+          <p class="in_contents">
+            가끔 고양이가 몸을 둥글게 말고 얼굴을 엉덩이 쪽으로 굽혀 잘 때가
+            있다. 일명 냥모나이트 자세. 얼굴을 숙이고 발이 바닥에서 떨어진
+            자세이기 때문에
+            <span class="in_emphasize">경계심은 낮은</span> 상태다. 이 자세일
+            경우 약간 서늘하다고 느낄 때가 있다고 한다. 또는 혼자 있고 싶을 때나
+            방해받고 싶지 않다는 의미라고도 한다.
+          </p>
+        </div>
+        <img
+          src="./picture/sleepcat4.jpg"
+          class="in_pic"
+          style="margin-top: 40px"
+        />
+        <div>
+          <p class="in_sub_contents">4. 손으로 눈을 가린 '고멘 네코'</p>
+          <p class="in_contents">
+            ‘고멘 네코’라고 불리는 이 자세. 손으로 눈을 가리거나 얼굴을 바닥에
+            묻는다. 집사들에게서도 가장 인기가 좋은 고양이 자는 모습, 고멘네코.
+            하지만 이것은 <span class="in_emphasize">눈이 부시다</span>는
+            뜻이다. 만약 이 자세로 자고 있다면 방 안의 조명을 꺼 어둡게 해주자.
+            너무 귀엽지만 고양이가 숙면할 수 있는 분위기를 만드는 것이 좋다.
+          </p>
+        </div>
+        <img
+          src="./picture/sleepcat5.jpg"
+          class="in_pic"
+          style="margin-top: 40px"
+        />
+        <div>
+          <p class="in_sub_contents">5. 옆이나 천장을 향해 누워 있는 모습</p>
+          <p class="in_contents">
+            <span class="in_emphasize">가장 편안하고 안정된 상태</span>를
+            나타낸다. 약점인 배를 그대로 보여주는 자세이기 때문이다. 야생
+            고양이나 불안함을 느끼는 고양이는 이 자세를 하지 않는다. 만약
+            고양이가 이 자세로 자고 있다면 스스로에게 칭찬해 줘도 좋을 것이다.
+            고양이에게 완벽한 잠자리를 만들어 준 집사이니까.
+          </p>
+        </div>
       </div>
-  </div>
+    </div>
 
     <a id="backtotop">Top</a>
     <script src="./topbutton.js"></script>
+    <script src="darkmode.js"></script>
   </body>
 </html>
 <style>
@@ -118,10 +193,9 @@
 
   a:hover {
     color: #ffffff;
-    cursor: url('./picture/cursor\ \(3\).cur'),auto;
+    cursor: url("./picture/cursor\ \(3\).cur"), auto;
   }
-  body{
-    cursor: url('./picture/cursor\ \(4\).cur'),auto;
+  body {
+    cursor: url("./picture/cursor\ \(4\).cur"), auto;
   }
-  
 </style>
